@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Author-->
+    <meta name="author" content="info@amigautier.us" />
+    <!--favicon buscador-->
+    <link rel="shortcut icon" href="images/logotipo/favicon.png">
+    <!--Description-->
+    <meta name="description" content="Ami Gautier architecture photography." />
+    <!--Keywords-->
+    <meta name="keywords" content="Fotografía de arquitectura Bogotá, Photography architecture Bogotá" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <!--Link js para abrir menú-->
+    <script src="js/menu.js" defer></script>
+    <!--Link logos redes sociales-->
+    <link rel="stylesheet" href="font/icofont.min.css">
+    <!--Script efecto scroll-->
+    <script src="js/scrollreveal.js"></script>
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
+
+</head>
+
+<body>
+
+
+    <!--Header-->
+    <header>
+        <nav class="contenedor">
+            <span class="btn_menu" onclick="showmenu()">
+                <i>
+                    <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+                        <div class="linea-1"></div>
+                        <div class="linea-2"></div>
+                        <div class="linea-3"></div>
+                    </div>
+                </i>
+            </span>
+            <div class="centrarlogotipo">
+                <a class="" href="index">
+                    <img class="logotipo" id="centrarlogotipo" src="images/logotipo/logotipo.png"
+                        alt="Logotipo Ami Gautier" />
+                </a>
+            </div>
+
+            <div class="redes_sociales1" id="redes_sociales1">
+                <a class="icofont-email" id="ico-gmail" href="mailto:info@amigautier.us" target="blank"></a>
+                <a class="icofont-ui-call" href="https://wa.me/573028141668" target="blank">
+                    <p>+57 302 814 1668</p>
+                </a>
+            </div>
+
+            <ul class="menu" id="mostrarmenu">
+                <p class="submenuitem" id="espaciovacio"
+                    style="border-bottom: 1px solid rgb(224, 224, 224); margin-bottom: 36px;"></p>
+
+                <a class="submenuitem" id="submenuitem" href="atmospheric">Atmospheric</a>
+                <a class="submenuitem" id="submenuitem" href="editorial">Editorial</a>
+                <a class="submenuitem" id="submenuitem" href="product">Product</a>
+                <a class="submenuitem" id="submenuitem" href="architecture">Architecture</a>
+                <a class="submenuitem" id="submenuitem" href="about">About</a>
+                <a class="submenuitem" id="submenuitem" href="contact">Contact</a>
+
+                <p class="submenuitem" id="espaciovacio"></p>
+
+                <div class="contenedor_redes_sociales">
+                    <div class="contenedor2_redes_sociales">
+                        <div class="redes_sociales">
+                            <a class="icofont-behance" href="https://www.behance.net/amigautier" target="blank"></a>
+                            <a class="icofont-instagram" href="http://www.instagram.com/amigautier" target="blank"></a>
+                            <a class="icofont-brand-whatsapp" href="https://wa.me/573028141668" target="blank"></a>
+                        </div>
+                        <div class="vanaal">
+                            <a href="https://www.vanaal.amigautier.us" target="blank">
+                                <h1>VANAAL</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header1"></div>
+    </header>
+
+    <!--Contenido principal-->
+    <main>
+        <div class="contenedorartistas">
+            <div class="imagenartistas" id="imagenartistas_1">
+                <img src="images/about/about-2.jpg" alt="Artista Ami Gautier" />
+            </div>
+            <div class="imagenartistas" id="imagenartistas_2">
+                <img src="images/about/about-1.jpg" alt="Artista Ami Gautier" />
+            </div>
+
+            <div class="txtartistas">
+                <div class="txtartistascotenido">
+                    <h2>Ami Gautier</h2>
+
+                    <p>
+                        Ami Gautier is a photographer and artist known for his nostalgic and poetic style, creating a
+                        mystical atmosphere that manages to immerse the viewer in each photograph.
+                        <br />
+                        <br />
+                        Ami is a lover of mountains, trees, rivers, plants and has managed to merge his love for nature
+                        and poetry in his photographic work.
+                        <br />
+                        <br />
+                        He spends a lot of time choosing the places, colors and details in his photographs to recreate
+                        them as he imagines them in his head. He is able to choose everyday scenarios and transform them
+                        into dreamlike moments.
+                    </p>
+
+                    <div class="textocontactoartista">
+                        <p class="icofont-instagram" id="1">
+                            <a href="http://www.instagram.com/amigautier" target="blank"
+                                id="1">instagram.com/amigautier</a>
+                        </p>
+
+                        <p class="icofont-behance" id="1" style="font-size: 21px;">
+                            <a href="https://www.behance.net/amigautier" target="blank" id="1"
+                                style="font-size: 16px;">behance.net/amigautier</a>
+                        </p>
+
+                        <p class="icofont-email" id="1" style="font-size: 21px;">
+                            <a href="mailto:info@amigautier.us" target="blank" id="1"
+                                style="font-size: 16px;">info@amigautier.us</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Javascript-->
+    <script src="js/animacionmenu.js"></script>
+    <script src="js/headerscroll.js"></script>
+    <script src="js/scroll_index.js"></script>
+
+</body>
+
+</html>

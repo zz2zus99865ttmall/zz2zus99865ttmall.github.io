@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Comienzo Arreglar Header*/
+
+header {
+  background: rgba(255, 255, 255, 0.788);
+  backdrop-filter: blur(8px);
+}
+
+#centrarlogotipo {
+  filter: invert();
+}
+
+#submenuitem {
+  color: rgb(41, 41, 43);
+}
+
+header .redes_sociales1 p,
+header .redes_sociales1 #ico-gmail,
+header .redes_sociales1 .icofont-ui-call {
+  color: rgb(41, 41, 43);
+}
+
+header .linea-1,
+header .linea-3 {
+  background-color: rgb(41, 41, 43);
+}
+
+/*Fin Arreglar Header*/
+
+/*Comienzo grid scroll fotos 2*/
+
+.carrusel_scroll {
+  background-color: rgb(255, 255, 255);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  margin-top: 65px;
+  width: 96, 5vw;
+}
+
+.cont_carrusel_scroll {
+  width: 100%;
+  height: 73vh;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  list-style: none;
+  gap: 10px;
+}
+
+.cont_carrusel_scroll img {
+  padding-top: 50px;
+  max-width: 470px;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.cont_carrusel_scroll h2 {
+  color: rgb(199, 199, 199);
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar {
+  height: 7px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 15px;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(146, 214, 196);
+  border-radius: 15px;
+}
+
+.textocarrusel{
+  margin-left: 10px;
+}
+
+.textocarrusel h2 {
+  color: rgb(32, 32, 32);
+  font-family: Laika;
+  font-size: 40px;
+  letter-spacing: 3px;
+  
+}
+
+.textocarrusel p {
+  color: rgb(151, 148, 148);
+  font-family: NewQueen;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+/*Fin grid fotos 2*/
+
+@media (max-width: 315px) {
+  #btn-cierra,
+  #btn-retrocede,
+  #btn-adelanta {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+    #contenedor-lightbox {
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+/*Lightbox modo pc*/
+
+@media screen and (min-width: 660px) {
+  .textocarrusel{
+    margin-left: 50px;
+  }
+
+  .textocarrusel h2 {
+    font-size: 40px;    
+  }
+  
+  .textocarrusel p {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  /*Comienzo Ligthbox*/
+  #contenedor-lightbox img {
+    width: auto;
+    height: 90vh;
+  }
+
+  /*Fin Lightbox*/
+}

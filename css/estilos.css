@@ -1,0 +1,34 @@
+@import url(menu.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(inicio.css);
+@import url(slider.css);
+@import url(editorial.css);
+
+@font-face {
+    font-family: "ParisLPA";
+    src: url("../font/FeniceStd-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Vinete-MT";
+    src: url("../font/BodoniMT.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Laika";
+    src: url("../font/DidotRoman.woff") format("woff");
+}
+
+@font-face {
+    font-family: "NewQueen";
+    src: url("../font/RockwellNova.woff") format("woff");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
