@@ -175,6 +175,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0);
+    margin-top: -3px;
 }
 
 .contenedor_txt_imagenfija_1 .txt_imagenfija_1 {
@@ -182,7 +183,7 @@
     width: 300px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: -60px;
+    margin-top: 50px;
 }
 
 .contenedor_txt_imagenfija_1 .txt_imagenfija_1 h2 {

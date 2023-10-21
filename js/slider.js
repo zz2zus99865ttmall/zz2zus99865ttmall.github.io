@@ -1,3 +1,21 @@
+//Para arrastrar la imagen fija cuando lo toque la otra imagen fija
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.querySelector('.contenedor_imagenfija_2');
+  const bannerfijo = document.querySelector('.bannerfijo3');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        banner.style.backgroundAttachment = 'local';
+      } else {
+        banner.style.backgroundAttachment = 'fixed';
+      }
+    });
+  });
+
+  observer.observe(bannerfijo);
+});
+
 //Para arrastrar la imagen fija cuando lo toque el footer
 document.addEventListener("DOMContentLoaded", function () {
   const banner2 = document.querySelector('.contenedor_imagenfija_5');

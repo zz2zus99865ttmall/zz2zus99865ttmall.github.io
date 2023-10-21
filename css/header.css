@@ -25,15 +25,13 @@ header {
 
 header.headerscroll {
     transition: 0.4s linear 0.1s;
-    background: rgba(255, 255, 255, 0.788);
-    backdrop-filter: blur(8px);
+    background: rgb(255, 255, 255);
     transition: 0.8s;
 }
 
 header:hover {
     transition: 0.4s linear 0.1s;
-    background: rgba(255, 255, 255, 0.788);
-    backdrop-filter: blur(8px);
+    background: rgb(255, 255, 255);
     transition: 0.8s;
 }
 
