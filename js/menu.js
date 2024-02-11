@@ -3,3 +3,4 @@ function showmenu(){
     document.getElementById("redes_sociales1").classList.toggle("redes_sociales1_scroll");
     document.getElementById("centrarlogotipo").classList.toggle("centrarlogotipo_scroll");
 }
+

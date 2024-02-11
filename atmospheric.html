@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ami Gautier: Atmospheric photography</title>
-     <!--Etiqueta Canonical-->
-    <link rel="canonical" href="https://www.amigautier.us" />
     <!--Author-->
-    <meta name="author" content="info@amigautier.us" />
+    <meta name="author" content="contact@amigautier.us" />
     <!--favicon buscador-->
     <link rel="shortcut icon" href="images/logotipo/favicon.png">
     <!--Description-->
     <meta name="description" content="Artistic photography by photographer Ami Gautier." />
     <!--Keywords-->
     <meta name="keywords" content="Artistic photography, Black and white photography, Atmospheric photography" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmospheric</title>
 
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="css/estilos.css" />
@@ -28,6 +28,14 @@
     <script src="js/scrollreveal.js"></script>
     <!--Deslizar tactil-->
     <script src="js/swiped-events.min.js"></script>
+
+    <!--Actualizar año-->
+    <script>
+        var fechaActual = new Date();
+        var añoActual = fechaActual.getFullYear();
+        var actualizarfecha = añoActual;
+    </script>
+
     <!--Bloquear clic derecho-->
     <script type="text/javascript">
         document.oncontextmenu = function () {
@@ -59,10 +67,8 @@
             </div>
 
             <div class="redes_sociales1" id="redes_sociales1">
-                <a class="icofont-email" id="ico-gmail" href="mailto:info@amigautier.us" target="blank"></a>
-                <a class="icofont-ui-call" href="https://wa.me/573028141668" target="blank">
-                    <p>+57 302 814 1668</p>
-                </a>
+                <p>Email</p>
+                <a class="icofont-email" id="ico-gmail" href="mailto:contact@amigautier.us" target="blank"></a>
             </div>
 
             <ul class="menu" id="mostrarmenu">
@@ -72,7 +78,7 @@
                 <a class="submenuitem" id="submenuitem" href="atmospheric">Atmospheric</a>
                 <a class="submenuitem" id="submenuitem" href="editorial">Editorial</a>
                 <a class="submenuitem" id="submenuitem" href="product">Product</a>
-                <a class="submenuitem" id="submenuitem" href="architecture">Architecture</a>
+                <!--       <a class="submenuitem" href="architecture">Architecture</a>-->
                 <a class="submenuitem" id="submenuitem" href="about">About</a>
                 <a class="submenuitem" id="submenuitem" href="contact">Contact</a>
 
@@ -83,10 +89,9 @@
                         <div class="redes_sociales">
                             <a class="icofont-behance" href="https://www.behance.net/amigautier" target="blank"></a>
                             <a class="icofont-instagram" href="http://www.instagram.com/amigautier" target="blank"></a>
-                            <a class="icofont-brand-whatsapp" href="https://wa.me/573028141668" target="blank"></a>
                         </div>
                         <div class="vanaal">
-                            <a href="https://www.vanaal.us" target="blank">
+                            <a href="https://www.thevanaal.com" target="blank">
                                 <h1>VANAAL</h1>
                             </a>
                         </div>
@@ -170,16 +175,13 @@
                 <h3>FIND ME</h3>
 
                 <p class="icofont-email" id="gmail">
-                    <a href="mailto:info@amigautier.us" target="blank">
+                    <a href="mailto:contact@amigautier.us" target="blank">
                         Email</a>
                 </p>
 
                 <p class="icofont-behance" id="1">
                     <a href="http://www.behance.com/amigautier" target="blank" id="instagram">
                         Behance</a>
-                </p>
-                <p class="icofont-brand-whatsapp" id="WhatsApp">
-                    <a href="https://wa.me/573028141668" target="blank">WhatsApp</a>
                 </p>
             </div>
 
@@ -193,7 +195,7 @@
                 <div class="imageAG"><img src="images/logotipo/favicon.png" alt="isotipo Ami Gautier"></div>
                 <a href="about" id="logotipofooter_about">About me</a>
                 <a href="contacto">Contact</a>
-                <a href="https://www.vanaal.us" target="_blank">
+                <a href="https://www.thevanaal.com" target="_blank">
                     <h2>VANAAL</h2>
                     <p>Magazine</p>
                 </a>
@@ -202,7 +204,9 @@
         </div>
 
         <div class="copyright">
-            <p>© Copyright 2023 Ami Gautier. All Rights Reserved.</p>
+            <p>© Copyright
+                <script>document.write(actualizarfecha)</script> Ami Gautier. All Rights Reserved.
+            </p>
         </div>
     </footer>
 

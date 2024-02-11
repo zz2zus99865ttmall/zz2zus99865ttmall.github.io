@@ -117,6 +117,14 @@ header .linea-3 {
   }
   
   @media screen and (min-width: 1050px) {
+    header .contenedor .centrarlogotipo {
+      border-bottom: 1px solid rgb(228, 228, 228);
+    }
+
+    .redes_sociales1 p, .redes_sociales1 #ico-gmail, .redes_sociales a {
+      display: block;
+    }
+  
   
     .contacto .gridcontacto .centrarcontacto .textocontacto {
       margin: 0;
