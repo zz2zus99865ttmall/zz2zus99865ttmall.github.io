@@ -133,11 +133,15 @@ header.headerscroll .submenuitem {
   display: none;
 }
 
-.redes_sociales1 p {
-  font-size: 13px;
+.redes_sociales1 .email_txt {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
   color: rgb(60, 61, 61);
-  margin-right: 5px;
+  margin-bottom: 2px;
   display: none;
+  cursor: pointer;
+  width: 42px;
 }
 
 .redes_sociales1.redes_sociales1_scroll a,
@@ -149,6 +153,32 @@ header.headerscroll .submenuitem {
   display: block;
 }
 
+.redes_sociales1 #email_txt:hover + .textohover_email{
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.textohover_email{
+  background-color: black;
+  width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: -25px;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.redes_sociales1 .textohover_email p{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
 /*Redes sociales*/
 
 .redes_sociales {
@@ -157,7 +187,7 @@ header.headerscroll .submenuitem {
   position: absolute;
   left: 0;
   width: 70px;
-  gap: 20px;
+  gap: 15px;
   margin-left: 15px;
 }
 
@@ -170,13 +200,40 @@ header.headerscroll .submenuitem {
   display: none;
 }
 
-.redes_sociales a:hover {
-  border-bottom: none;
-}
-
 .redes_sociales .icofont-behance {
   font-size: 20px;
   margin-top: 13px;
+}
+
+.textohover_instagram, .textohover_behance {
+  background-color: black;
+  width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.textohover_behance{
+  left: 0px;
+}
+
+.icofont-instagram:hover + .textohover_instagram, .icofont-behance:hover + .textohover_behance, #ico-gmail:hover + .textohover_email, #email_txt:hover + .textohover_email{
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.redes_sociales a:hover {
+  border-bottom: none;
 }
 
 .vanaal {
@@ -219,6 +276,11 @@ ul.show {
 
 /*Tamaño dispositivo muy pequeño*/
 @media (max-width: 315px) {
+
+  .centrarlogotipo_scroll.logotipo {
+    width: 150px;
+  }
+
   .redes_sociales1 #ico-gmail {
     margin-left: -15px;
     margin-right: 5px;
@@ -250,6 +312,10 @@ ul.show {
 
   body.noscroll {
     overflow: hidden;
+  }
+
+  .icofont-instagram:hover + .textohover_instagram, .icofont-behance:hover + .textohover_behance, #ico-gmail:hover + .textohover_email, #email_txt:hover + .textohover_email{
+    opacity: 0;
   }
 
   .menu {
@@ -317,7 +383,7 @@ ul.show {
     padding-right: 8px;
   }
 
-  header.headerscroll .redes_sociales1 p, header:hover .redes_sociales1 p, .redes_sociales1 p {
+  header.headerscroll .redes_sociales1 #email_txt, header:hover .redes_sociales1 #email_txt {
     display: none;
   }
 
@@ -382,13 +448,12 @@ ul.show {
 
   .contenedor_redes_sociales .redes_sociales a:hover {
     background-color: none;
-    color: rgb(120, 121, 122);
+    color: rgb(41, 41, 43);
     border-bottom: none;
-    height: 17px;
+    height: auto;
   }
 
   .vanaal {
-   /* display: flex;*/
     justify-content: center;
     width: 100%;
   }

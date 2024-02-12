@@ -40,7 +40,7 @@ header:hover .logotipo {
 }
 
 header:hover .submenuitem,
-header:hover .redes_sociales1 p,
+header:hover .redes_sociales1 #email_txt,
 header:hover .redes_sociales1 #ico-gmail,
 header:hover .redes_sociales1 .icofont-ui-call,
 header:hover .redes_sociales a {
@@ -48,8 +48,16 @@ header:hover .redes_sociales a {
   display: block;
 }
 
+header .redes_sociales a:hover{
+  color: rgb(8, 91, 158);
+}
+
 header.headerscroll .redes_sociales a{
   display: block;
+}
+
+header:hover .redes_sociales1 .textohover_email p{
+  color: rgb(255, 255, 255);
 }
 
 header:hover .linea-1,
@@ -75,6 +83,7 @@ header .contenedor {
   position: relative;
   z-index: 101;
   margin-left: 20px;
+  margin-right: 20px;
   margin-top: 2px;
   width: 180px;
   height: auto;

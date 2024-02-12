@@ -35,6 +35,9 @@ header .linea-3 {
     background-color: rgb(41, 41, 43);
 }
 
+#email_txt{
+  display: block;
+}
 /*Fin Arreglar Header*/
 
 /*Comienzo contacto modo dispositivo*/
