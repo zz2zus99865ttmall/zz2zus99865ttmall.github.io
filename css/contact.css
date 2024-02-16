@@ -36,7 +36,7 @@ header .linea-3 {
 }
 
 #email_txt{
-  display: block;
+  display: none;
 }
 /*Fin Arreglar Header*/
 
@@ -57,6 +57,7 @@ header .linea-3 {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    width: 100%;
   }
   
   .contacto .gridcontacto .centrarcontacto {
@@ -120,6 +121,11 @@ header .linea-3 {
   }
   
   @media screen and (min-width: 1050px) {
+
+    #email_txt{
+      display: block;
+    }
+
     header .contenedor .centrarlogotipo {
       border-bottom: 1px solid rgb(228, 228, 228);
     }

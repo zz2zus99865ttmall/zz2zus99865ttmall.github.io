@@ -34,7 +34,7 @@ header .linea-3 {
 }
 
 #email_txt{
-  display: block;
+  display: none;
 }
 
 /*Fin Arreglar Header*/
@@ -136,9 +136,13 @@ header .linea-3 {
   }
 
 /*Lightbox modo pc*/
+@media (min-width: 1050px){
+  #email_txt{
+    display: block;
+  }
+}
 
 @media screen and (min-width: 660px) {
-
   .carrusel_scroll {
     margin-top: 120px;
   }
