@@ -116,22 +116,7 @@ footer .contenedorfooter .logotipofooter a {
   font-weight: normal;
   font-size: 15px;
   color: #2b2c2c;
-}
-
-footer .contenedorfooter .logotipofooter #logotipofooter_about {
-  padding-bottom: 13px;
-}
-
-footer .contenedorfooter .logotipofooter h2 {
-  font-family: Vinete-MT;
-  font-size: 18px;
-  padding-top: 18px;
-}
-
-footer .contenedorfooter .logotipofooter p {
-  font-family: Vinete-MT;
-  font-size: 15px;
-  text-decoration: overline;
+  margin-bottom: 15px;
 }
 
 footer .copyright {
@@ -233,16 +218,6 @@ footer .copyright p {
   footer .contenedorfooter .logotipofooter a {
     font-size: 14px;
   }
-
-  footer .contenedorfooter .logotipofooter h2 {
-    font-size: 22px;
-  }
-
-  footer .contenedorfooter .logotipofooter p {
-    padding-left: 10px;
-    font-size: 18px;
-  }
-
 
   footer .contenedorfooter .logotipofooter #logotipofooter_about {
     padding-top: 20px;
