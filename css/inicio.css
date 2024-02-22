@@ -615,7 +615,7 @@
   /*Comienzo imagen fija 2 modo dispositivo*/
 
   .contenedor_imagenfija_2 {
-    background-image: url(../images/inicio/banner_5.jpg);
+    background-image: url(../images/inicio/banner_5.JPG);
     background-position-y: 40%;
   }
 
@@ -623,7 +623,7 @@
 
   /*Comienzo del banner 3*/
   .contenedorporfolio .bannerfijo3 {
-    background-image: url(../images/inicio/banner_5.jpg);
+    background-image: url(../images/inicio/banner_5.JPG);
     background-size: cover;
     background-position-y: 40%;
     background-position-x: 40%;
