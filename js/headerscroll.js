@@ -6,3 +6,21 @@ window.addEventListener("scroll", function(){
     redes_sociales.classList.toggle("redes_sociales1_scroll1",window.scrollY>0);
     flecha.classList.toggle("arrowscroll",window.scrollY>30);
 })
+
+//Para arrastrar la imagen fija cuando lo toque el footer
+document.addEventListener("DOMContentLoaded", function () {
+  const banner2 = document.querySelector('.contenedor_imagenfija_5');
+  const footer1 = document.querySelector('footer');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        banner2.style.backgroundAttachment = 'local';
+      } else {
+        banner2.style.backgroundAttachment = 'fixed';
+      }
+    });
+  });
+
+  observer.observe(footer1);
+});
