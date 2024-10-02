@@ -37,10 +37,6 @@ header .linea-3 {
 
 /*Diseño en modo dispositivo*/
 
-#imagenartistas_2 {
-  display: none;
-}
-
 .contenedorartistas {
   display: flex;
   flex-direction: column;
@@ -119,6 +115,7 @@ header .linea-3 {
   font-family: NewQueen;
   text-decoration: none;
   color: rgb(67, 67, 67);
+  font-size: 16px;
 }
 
 .textocontactoartista p {
@@ -129,17 +126,23 @@ header .linea-3 {
   line-height: 1.4;
 }
 
-/*Diseño en modo pc*/
+
 
 @media (max-width: 315px) {
   .contenedorartistas {
     min-width: 270px;
   }
 
-  .textocontactoartista p {
+  .textocontactoartista p{
     font-size: 14px;
   }
+
+  .textocontactoartista a {
+    font-size: 12px;
+  }
 }
+
+/*Diseño en modo pc*/
 
 @media screen and (min-width: 1050px) {
   header {
@@ -151,14 +154,6 @@ header .linea-3 {
     border-bottom: 1px solid rgb(228, 228, 228);
   }
 
-  #imagenartistas_2 {
-    display: block;
-  }
-
-  #imagenartistas_1 {
-    display: none;
-  }
-
   .contenedorartistas {
     flex-direction: row;
     margin-top: 0px;
@@ -166,6 +161,7 @@ header .linea-3 {
   }
 
   .imagenartistas {
+    position: relative;
     top: 0;
     left: 0;
     width: 50vw;
@@ -175,9 +171,12 @@ header .linea-3 {
   }
 
   .imagenartistas img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 0;
+    position: relative; /* Añadido */
+    top: -90px; /* Añadido */
   }
 
   .txtartistas {
