@@ -1,0 +1,149 @@
+/*Esilos modo dispositivo*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.8s;
+}
+
+header.headerscroll {
+  transition: 0.4s linear 0.1s;
+  background: rgb(255, 255, 255);
+  transition: 0.8s;
+}
+
+header:hover {
+  transition: 0.4s linear 0.1s;
+  background: rgb(255, 255, 255);
+  transition: 0.8s;
+}
+
+header:hover .logotipo {
+  filter: invert();
+}
+
+header:hover .submenuitem,
+header:hover .redes_sociales1 #email_txt,
+header:hover .redes_sociales1 #ico-gmail,
+header:hover .redes_sociales1 .icofont-ui-call,
+header:hover .redes_sociales a {
+  color: rgb(41, 41, 43);
+  display: block;
+}
+
+header .redes_sociales a:hover{
+  color: rgb(8, 91, 158);
+}
+
+header.headerscroll .redes_sociales a{
+  display: block;
+}
+
+header:hover .redes_sociales1 .textohover_email p{
+  color: rgb(255, 255, 255);
+}
+
+header:hover .linea-1,
+header:hover .linea-3 {
+  background-color: rgb(41, 41, 43);
+}
+
+header .contenedor {
+  width: 98%;
+  margin: auto;
+  display: table;
+  position: relative;
+}
+
+.contenedor .centrarlogotipo {
+  display: block;
+  width: 98%;
+  margin: auto;
+  text-align: center;
+}
+
+.centrarlogotipo .logotipo {
+  position: relative;
+  z-index: 101;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 2px;
+  width: 180px;
+  height: auto;
+}
+
+header.headerscroll .logotipo {
+  filter: invert();
+}
+
+/*Estilos header modo pc*/
+@media (max-width: 315px) {
+  header .contenedor {
+    min-width: 270px;
+  }
+
+  .centrarlogotipo .logotipo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .contenedor {
+    max-width: 1650px;
+  }
+}
+
+@media (min-width: 1050px) {
+  header {
+    height: auto;
+  }
+
+  .contenedor .centrarlogotipo {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-right: 15px;
+  }
+
+  header.headerscroll .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    transition: 0.8s;
+  }
+
+  header:hover .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    transition: 0.8s;
+  }
+
+  .centrarlogotipo .logotipo {
+    width: 250px;
+    height: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .contenedor {
+    min-width: 310px;
+  }
+}

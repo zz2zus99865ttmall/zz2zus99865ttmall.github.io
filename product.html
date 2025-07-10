@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Author-->
+    <meta name="author" content="info.amigautier@gmail.com" />
+    <!--favicon buscador-->
+    <link rel="shortcut icon" href="images/logotipo/favicon.png">
+    <!--Description-->
+    <meta name="description" content="Photography product by photographer Ami Gautier and Vanaal art department." />
+    <!--Keywords-->
+    <meta name="keywords"
+        content="Product photography, Product photography Vanaal, Product photography Bogota, Product photography Colombia, Product photography Ami Gautier, Fotografía producto, Fotografía producto Vanaal, Fotografía producto Bogotá, Fotografía producto Colombia, Fotografía producto Ami Gautier" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografía producto</title>
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!--Link logos redes sociales-->
+    <link rel="stylesheet" href="font/icofont.min.css">
+    <!--Link js para abrir menú-->
+    <script src="js/menu.js" defer></script>
+    <!--Script efecto scroll-->
+    <script src="js/scrollreveal.js"></script>
+    <!--Deslizar tactil-->
+    <script src="js/swiped-events.min.js"></script>
+
+    <!--Actualizar año-->
+    <script>
+        var fechaActual = new Date();
+        var añoActual = fechaActual.getFullYear();
+        var actualizarfecha = añoActual;
+    </script>
+
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="contenedor">
+            <span class="btn_menu" onclick="showmenu()">
+                <i>
+                    <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+                        <div class="linea-1"></div>
+                        <div class="linea-2"></div>
+                        <div class="linea-3"></div>
+                    </div>
+                </i>
+            </span>
+            <div class="centrarlogotipo">
+                <a class="" href="index">
+                    <img class="logotipo" id="centrarlogotipo" src="images/logotipo/logotipo.png"
+                        alt="Logotipo Ami Gautier" />
+                </a>
+            </div>
+
+            <div class="redes_sociales1" id="redes_sociales1">
+                <a class="email_txt" id="email_txt" href="mailto:info.amigautier@gmail.com" target="blank">Email</a>
+                <div class="textohover_email"><p>Contact me</p></div>
+                <a class="icofont-email" id="ico-gmail" href="mailto:info.amigautier@gmail.com" target="blank"></a>
+                <div class="textohover_email"><p>Contact me</p></div>
+            </div>
+
+            <ul class="menu" id="mostrarmenu">
+                <p class="submenuitem" id="espaciovacio"
+                    style="border-bottom: 1px solid rgb(224, 224, 224); margin-bottom: 36px;"></p>
+
+                <a class="submenuitem" href="atmospheric">Atmospheric</a>
+                <a class="submenuitem" href="editorial">Editorial</a>
+                <a class="submenuitem" href="#">Product</a>
+                <a class="submenuitem" href="about">About</a>
+                <a class="submenuitem" href="contact">Contact</a>
+
+                <p class="submenuitem" id="espaciovacio"></p>
+
+                <div class="contenedor_redes_sociales">
+                    <div class="contenedor2_redes_sociales">
+                        <div class="redes_sociales">
+                            <a class="icofont-behance" href="https://www.behance.net/amigautier" target="blank"></a>
+                            <div class="textohover_behance"><p>Follow Me on Behance</p></div>
+                            <a class="icofont-instagram" href="http://www.instagram.com/amigautier" target="blank"></a>
+                            <div class="textohover_instagram"><p>Follow Me on Instagram</p></div>
+                        </div>
+                        <div class="vanaal">
+                            <a href="https://www.thevanaal.com" target="blank">
+                                <h1>VANAAL</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header1"></div>
+    </header>
+
+    <!--Contenido principal-->
+    <main>
+
+        <div class="contenedorporfolio">
+
+            <div class="bannerfijo">
+
+                <div class="degradadobanner2"></div>
+
+                <div class="degradadobanner">
+
+                    <div class="txtbanner">
+                        <div class="conttxtbanner">
+                            <h2>Escrupuloso y minucioso</h2>
+                            <p>
+                                Los pequeños detalles son los que crean grandes sensaciones
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="txtbanner2">
+                        <div class="conttxtbanner2">
+                            <h2>Hablamos el idioma de las imágenes</h2>
+                            <p>
+                                En un mundo globalizado por las imágenes digitales, nosotros creamos un producto de
+                                estética lujosa y elegante,
+                                trabajando en conjunto, haciendo que el resultado final posea la esencia sinérgica del
+                                arte de Vanaal
+                                y las ideas de nuestros clientes.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="whitebackground">
+
+                <div class="imgwhiteback">
+                    <img src="images/producto/Reloj-dorado-2.jpg" alt="Reloj dorado" />
+                </div>
+
+                <div class="txtwhiteback">
+
+                    <h2>Sentido de la estética</h2>
+                    <p>Dedicamos el tiempo necesario en hacer ver las cosas sencillas de una forma innovadora.</p>
+
+                </div>
+
+            </div>
+
+            <div class="gridfotos1">
+                <img src="images/producto/Reloj-negro.jpg" alt="Reloj Negro" />
+
+                <!-- <img id="img_gridfotos1" src="images/producto/Perfume-Nitro.jpg" alt="Perfume Nitro" />-->
+            </div>
+
+            <div class="contenedor_imagenfija_1">
+                <img id="img_fija_1" src="images/producto/Perfume-Nitro.jpg" alt="Perfume-Nitro.jpg"
+                    alt="Perfume Nitro" />
+
+                <div class="grid_cont_imgfija_1">
+                    <img id="img_fija_2" src="images/producto/Collar-azul.jpg"
+                        alt="Collar Azul al rededor de conchas y agua">
+
+                    <!--  <img id="img_fija_3" src="images/editorial/1--Entre-hojas-de-arboles.jpg"
+                        alt="Portada editorial mujer entre árboles"> -->
+                </div>
+            </div>
+
+            <div class="cont_txt_imgfija1">
+                <div class="txt_imgfija_1" id="txt_imgfija_1">
+                    <h2>El mundo de las ideas</h2>
+                    <p>No solamente somos para aquellos que buscan materializar sus ideas artísticas, sino también para
+                        los que buscan crearlas.</p>
+                </div>
+            </div>
+
+            <div class="gridfotos_2">
+
+                <img id="imggrid_2" src="images/producto/fondo-extintores-2.jpg" alt="Fondo extintores">
+                <img id="imggrid_2_grande" src="images/producto/fondo-extintores.jpg" alt="Fondo extintores">
+
+                <div class="carrusel_scroll">
+
+                    <div class="cont_carrusel_scroll">
+                        <h2>Galeria</h2>
+
+                        <div class="cont_carrusel_scroll_1">
+                            <img class="carrusel_img" id="sbutton1" src="images/producto/Acetato-y-potasio.jpg"
+                                alt="Extintor Acetato y Potasio">
+                            <img class="carrusel_img" id="sbutton2" src="images/producto/Solkaflam.jpg"
+                                alt="Extintor Solkaflam 123">
+                            <img class="carrusel_img" id="sbutton3" src="images/producto/CO2.jpg" alt="Extintor CO2">
+                            <img class="carrusel_img" id="sbutton4" src="images/producto/Agua-a-presion.jpg"
+                                alt="Extintor agua a presión">
+                        </div>
+                    </div>
+
+                    <section id="lightbox">
+                        <div id="contenedor-lightbox">
+                            <img id="img-activa" src="images/producto/Acetato-y-potasio.jpg" alt="galeria de imagenes">
+                            <button id="btn-cierra" type="button">x</button>
+                            <button id="btn-retrocede" type="button">&lt;</button>
+                            <button id="btn-adelanta" type="button">&gt;</button>
+                        </div>
+
+                        <div class="slider">
+                            <li>
+                                <input type="radio" id="sbutton1" name="sradio" checked>
+                                <label for="sbutton1"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton2" name="sradio">
+                                <label for="sbutton2"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton3" name="sradio">
+                                <label for="sbutton3"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton4" name="sradio">
+                                <label for="sbutton4"></label>
+                            </li>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div class="contenedor_imagenfija_1" id="contenedor_imagenfija_1">
+                <img id="img_fija_1" src="images/producto/Conos-viales.jpg" alt="Conos viales" />
+
+                <div class="grid_cont_imgfija_5">
+                    <img id="img_fija_2" src="images/producto/Aro-salvavidas.jpg" alt="Aro salvavidas">
+
+                    <img id="img_fija_3" src="images/producto/cintas.jpg" alt="Cintas de seguridad">
+                </div>
+            </div>
+
+            <div class="cont_txt_imgfija1">
+                <div class="txt_imgfija_1">
+                    <h2></h2>
+                    <p>
+                        “La calidad en un producto o servicio no es lo que tu le pones, sino lo que el cliente obtiene”.
+                        <br><br>
+                        —Peter Drucker
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="contenedorfooter">
+
+            <div class="redessociales">
+                <h3>FIND ME</h3>
+
+                <p class="icofont-email" id="gmail">
+                    <a href="mailto:info.amigautier@gmail.com" target="blank">
+                        Email</a>
+                </p>
+
+                <p class="icofont-behance" id="1">
+                    <a href="http://www.behance.com/amigautier" target="blank" id="instagram">
+                        Behance</a>
+                </p>
+            </div>
+
+            <div class="feedinstagram">
+                <h2>Instagram</h2>
+                <a href="http://www.instagram.com/amigautier" target="blank"><img src="images/footer/feed.jpg"
+                        alt="Feed de Instagram" /></a>
+            </div>
+
+            <div class="logotipofooter">
+                <div class="imageAG"><img src="images/logotipo/favicon.png" alt="isotipo Ami Gautier"></div>
+                <a href="about" id="logotipofooter_about">About me</a>
+                <a href="contact">Contact</a>
+                <a href="atmospheric">Atmospheric</a>
+                <a href="editorial">Editorial</a>
+                <a href="product">Product</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© Copyright
+                <script>document.write(actualizarfecha)</script> Ami Gautier. <br> All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="js/animacionmenu.js"></script>
+    <script src="js/headerscroll.js"></script>
+    <script src="js/scroll_index.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>

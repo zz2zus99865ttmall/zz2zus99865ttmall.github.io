@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Author-->
+    <meta name="author" content="info.amigautier@gmail.com" />
+    <!--favicon buscador-->
+    <link rel="shortcut icon" href="images/logotipo/favicon.png">
+    <!--Description-->
+    <meta name="description" content="Editorial photography by photographer Ami Gautier and Vanaal art department." />
+    <!--Keywords-->
+    <meta name="keywords"
+        content="Editorial photography, Editorial photography Vanaal, Editorial photography Bogota, Editorial photography Colombia, Editorial photography Ami Gautier, Fotografía editorial, Fotografía editorial Vanaal, Fotografía editorial Bogotá, Fotografía editorial Colombia, Fotografía editorial Ami Gautier" />
+    <!--Hoja de estilos-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Photography</title>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!--Link js para abrir menú-->
+    <script src="js/menu.js" defer></script>
+    <!--Link logos redes sociales-->
+    <link rel="stylesheet" href="font/icofont.min.css">
+    <!--Script efecto scroll-->
+    <script src="js/scrollreveal.js"></script>
+    <!--Deslizar tactil-->
+    <script src="js/swiped-events.min.js"></script>
+
+    <!--Actualizar año-->
+    <script>
+        var fechaActual = new Date();
+        var añoActual = fechaActual.getFullYear();
+        var actualizarfecha = añoActual;
+    </script>
+
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="contenedor">
+            <span class="btn_menu" onclick="showmenu()">
+                <i>
+                    <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+                        <div class="linea-1"></div>
+                        <div class="linea-2"></div>
+                        <div class="linea-3"></div>
+                    </div>
+                </i>
+            </span>
+            <div class="centrarlogotipo">
+                <a class="" href="index">
+                    <img class="logotipo" id="centrarlogotipo" src="images/logotipo/logotipo.png"
+                        alt="Logotipo Ami Gautier" />
+                </a>
+            </div>
+
+            <div class="redes_sociales1" id="redes_sociales1">
+                <a class="email_txt" id="email_txt" href="mailto:info.amigautier@gmail.com" target="blank">Email</a>
+                <div class="textohover_email"><p>Contact me</p></div>
+                <a class="icofont-email" id="ico-gmail" href="mailto:info.amigautier@gmail.com" target="blank"></a>
+                <div class="textohover_email"><p>Contact me</p></div>
+            </div>
+
+            <ul class="menu" id="mostrarmenu">
+                <p class="submenuitem" id="espaciovacio"
+                    style="border-bottom: 1px solid rgb(224, 224, 224); margin-bottom: 36px;"></p>
+
+                <a class="submenuitem" href="atmospheric">Atmospheric</a>
+                <a class="submenuitem" href="#">Editorial</a>
+                 <a class="submenuitem" href="product">Product</a>
+                <a class="submenuitem" href="about">About</a>
+                <a class="submenuitem" href="contact">Contact</a>
+
+                <p class="submenuitem" id="espaciovacio"></p>
+
+                <div class="contenedor_redes_sociales">
+                    <div class="contenedor2_redes_sociales">
+                        <div class="redes_sociales">
+                            <a class="icofont-behance" href="https://www.behance.net/amigautier" target="blank"></a>
+                            <div class="textohover_behance"><p>Follow Me on Behance</p></div>
+                            <a class="icofont-instagram" href="http://www.instagram.com/amigautier" target="blank"></a>
+                            <div class="textohover_instagram"><p>Follow Me on Instagram</p></div>
+                        </div>
+                        <div class="vanaal">
+                            <a href="https://www.thevanaal.com" target="blank">
+                                <h1>VANAAL</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header1"></div>
+    </header>
+
+    <!--Contenido principal-->
+
+    <main>
+
+        <div class="contenedorporfolio_editorial">
+
+            <div class="bannerfijo_editorial">
+
+                <div class="degradadobanner2_editorial"></div>
+
+                <div class="degradadobanner_editorial">
+
+                    <div class="txtbanner_editorial">
+                        <div class="conttxtbanner_editorial">
+                            <h2>Elegante y sensitivo</h2>
+                            <p>
+                                La armonía de lo clásico y el enfoque moderno de la moda
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="txtbanner2_editorial">
+                        <div class="conttxtbanner2_editorial">
+                            <h2>Más allá de una foto contamos una historia</h2>
+                            <p>
+                                En cada proyecto que realizamos queremos llevar a los espectadores a un nostos, a
+                                formular una pregunta, a detenerse y observar los más ínfimos detalles del lenguaje que
+                                hemos desarrollado a través de las luces y sombras, de las texturas y colores.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="whitebackground_editorial">
+
+                <div class="imgwhiteback_editorial">
+                    <img src="images/editorial/editorial2.jpg"
+                        alt="Portada editorial mujer con abrigo de peluce blanco y vestido de espejos circulares" />
+                </div>
+
+                <div class="txtwhiteback_editorial">
+
+                    <h2>Catalogo 2022</h2>
+                    <p>Un mundo en el que la naturaleza emana en cada palpitación al mezclarse con las últimas
+                        tendencias de la moda</p>
+
+                </div>
+
+            </div>
+
+            <div class="gridfotos1_editorial">
+                <img src="images/editorial/editorial3.jpg"
+                    alt="Portada editorial hombre con chaleco de espejos tirando un bolso a la cámara" />
+
+                <img id="img_gridfotos1_editorial" src="images/editorial/editorial4.jpg"
+                    alt="Portada editorial de un hombre y una mujer mirando a la camara, él de rodillas y ella con una pierna arriba de la pierna de él" />
+            </div>
+
+            <div class="contenedor_imagenfija_1_editorial">
+                <img id="img_fija_1_editorial" src="images/editorial/editorial5.jpg"
+                    alt="Portada editorial mujer de espaldas, con saco rojo, girando para mirar a la cámara" />
+
+                <div class="grid_cont_imgfija_1_editorial">
+                    <img id="img_fija_2_editorial" src="images/editorial/editorial6.jpg"
+                        alt="Portada editorial mujer con saco rojo y pantalón blanco, caminando arriba de un tronco de árbol caído">
+
+                    <img id="img_fija_3_editorial" src="images/editorial/editorial7.jpg"
+                        alt="Portada editorial mujer con saco rojo y pantalón blanco, mirando al horizonte.">
+                </div>
+            </div>
+
+            <div class="cont_txt_imgfija1_editorial">
+                <div class="txt_imgfija_1_editorial" id="txt_imgfija_1_editorial">
+                    <h2>Arte creativo</h2>
+                    <p>La libertar de expresión creativa nos ha llevado a contar las historias a un nivel poético</p>
+                </div>
+            </div>
+
+            <div class="gridfotos_2_editorial">
+
+                <img id="imggrid_2_editorial" src="images/editorial/editorial8.jpg"
+                    alt="Portada editorial mujer con traje largo de color azul, guantes negros y maquillaje artístico azul oscuro, mirando al infinito">
+                <img id="imggrid_2_grande_editorial" src="images/editorial/editorial-8.jpg"
+                    alt="Portada editorial mujer con traje largo de color azul, guantes negros y maquillaje artístico azul oscuro, mirando al infinito">
+
+                <div class="carrusel_scroll">
+
+                    <div class="cont_carrusel_scroll">
+                        <h2>Galeria</h2>
+
+                        <div class="cont_carrusel_scroll_1">
+                            <img class="carrusel_img" id="sbutton1" src="images/editorial/editorial9.jpg"
+                                alt="Portada editorial mujer con gabán gris y botas largas hasta las rodillas, mirando fijamente a la cámara">
+                            <img class="carrusel_img" id="sbutton2" src="images/editorial/editorial10.jpg"
+                                alt="Portada editorial mujer con gabán gris y botas largas hasta las rodillas, en la puerta de un ascensor de color dorado">
+                            <img class="carrusel_img" id="sbutton3" src="images/editorial/editorial11.jpg"
+                                alt="Portada editorial una pareja de hombre y mujer de espaldas, con gabanes largos, girando para mirar a la cámara">
+                            <img class="carrusel_img" id="sbutton4" src="images/editorial/editorial12.jpg"
+                                alt="Portada editorial mujer con gabán y botas negras lagas, saliendo de una esquina para mirar  a un hombre que está recostado contra la pared">
+                        </div>
+                    </div>
+
+                    <section id="lightbox">
+                        <div id="contenedor-lightbox">
+                            <img id="img-activa" src="images/editorial/editorial9.jpg" alt="galeria de imagenes">
+                            <button id="btn-cierra" type="button">x</button>
+                            <button id="btn-retrocede" type="button">&lt;</button>
+                            <button id="btn-adelanta" type="button">&gt;</button>
+                        </div>
+
+                        <div class="slider">
+                            <li>
+                                <input type="radio" id="sbutton1" name="sradio" checked>
+                                <label for="sbutton1"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton2" name="sradio">
+                                <label for="sbutton2"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton3" name="sradio">
+                                <label for="sbutton3"></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sbutton4" name="sradio">
+                                <label for="sbutton4"></label>
+                            </li>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div class="contenedor_imagenfija_1_editorial" id="contenedor_imagenfija_1_editorial">
+                <img id="img_fija_1_editorial" src="images/editorial/editorial13.jpg"
+                    alt="Portada editorial mujer elegante con camioneta azul detrás de ella." />
+
+                <div class="grid_cont_imgfija_1_editorial">
+                    <img id="img_fija_2_editorial" src="images/editorial/editorial14.jpg"
+                        alt="Portada editorial mujer con saco verde y gafas en forma de corazón, mirando al horizonte">
+
+                    <img id="img_fija_3_editorial" src="images/editorial/editorial15.jpg"
+                        alt="Portada editorial mujer elegante con saco en sostenido en los hombros, vestido verde y una cartera de color café, en la puerta de un hotel">
+                </div>
+            </div>
+
+            <div class="cont_txt_imgfija1_editorial">
+                <div class="txt_imgfija_1_editorial">
+                    <h2></h2>
+                    <p>"La moda no sólo existe en los vestidos. La moda está en el cielo, en las calles, la moda tiene
+                        que ver con ideas, la forma en que vivimos y lo qué está sucediendo."
+                        <br><br> -Coco Chanel
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="contenedor_imagenfija_2_editorial">
+                <img id="imgfija_cont2_editorial" src="images/editorial/editorial16.jpg"
+                    alt="Portada editorial beauty maquillaje artístico de color azul" />
+
+                <img id="imgfija_cont2_grande_editorial" src="images/editorial/editorial-16.jpg"
+                    alt="Portada editorial beauty maquillaje artístico de color azul" />
+
+                <div class="grid_cont_imgfija_2_editorial">
+                    <img id="img2_gridfijo2_editorial" src="images/editorial/editorial18.jpg"
+                        alt="Portada editorial una pareja de una mujer blanca y hombre negro dandose la espalda, ella reposa su cabeza en la espalda de él.">
+                    <img id="img2_gridfijo2_editorial" class="imgfinal_gridfijo2" src="images/editorial/editorial19.jpg"
+                        alt="Portada editorial mujer con maquillaje artístico de color azul, acostada en un sofa mirando hacia arriba">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="contenedorfooter">
+
+            <div class="redessociales">
+                <h3>FIND ME</h3>
+
+                <p class="icofont-email" id="gmail">
+                    <a href="mailto:info.amigautier@gmail.com" target="blank">
+                        Email</a>
+                </p>
+
+                <p class="icofont-behance" id="1">
+                    <a href="http://www.behance.com/amigautier" target="blank" id="instagram">
+                        Behance</a>
+                </p>
+            </div>
+
+            <div class="feedinstagram">
+                <h2>Instagram</h2>
+                <a href="http://www.instagram.com/amigautier" target="blank"><img src="images/footer/feed.jpg"
+                        alt="Feed de Instagram" /></a>
+            </div>
+
+            <div class="logotipofooter">
+                <div class="imageAG"><img src="images/logotipo/favicon.png" alt="isotipo Ami Gautier"></div>
+                <a href="about" id="logotipofooter_about">About me</a>
+                <a href="contact">Contact</a>
+                <a href="atmospheric">Atmospheric</a>
+                <a href="editorial">Editorial</a>
+                <a href="product">Product</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© Copyright
+                <script>document.write(actualizarfecha)</script> Ami Gautier. <br> All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="js/animacionmenu.js"></script>
+    <script src="js/headerscroll.js"></script>
+    <script src="js/scroll_index.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>
