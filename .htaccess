@@ -5,6 +5,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
+#Redirección
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^amigautier\.work [NC]
+RewriteRule ^(.*)$ https://www.amigautier.work/$1 [L,R=301]
+
 #Bloquear bots
 RewriteEngine on
 RewriteCond %{HTTP_HOST} !^$
